@@ -1,0 +1,9 @@
+<p>demorouting works!</p>
+<a routerLink="../target/1">Cible 1</a> <br />
+<a routerLink="../target/42">Cible 42</a>
+
+<ul>
+  <li *ngFor="let a of stock">
+    <a [routerLink]="['../target',a.id]">{{a.nom}}</a>
+  </li>
+</ul>
