@@ -1,2 +1,9 @@
-<a routerLink="home">Home</a> |
-<a routerLink="demo/demorouting">Démos routing</a>
+<!-- <a routerLink="home">Home</a> |
+<a routerLink="demo/demorouting">Démos routing</a> |
+<a routerLink="demo/demoinput">Démos input</a> | -->
+
+<ol>
+  <li *ngFor="let lien of listeLien">
+    <a [routerLink]="lien.url">{{lien.label}}</a>
+  </li>
+</ol>

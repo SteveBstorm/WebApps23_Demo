@@ -1,0 +1,9 @@
+<h2>Composant appelé par sélecteur</h2>
+<p>Valeur envoyé par le composant appelant : {{valeur}}</p>
+<p>Valeur de truc : {{truc}}</p>
+<p>Nom sélectionné chez le parent : {{nom}}</p>
+<p>Voulez vous supprimez {{nom}}</p>
+<button (click)="supprimer(true)">Oui</button><button (click)="supprimer(false)">Non</button>
+<hr />
+<input [(ngModel)]="monTexte"> <button (click)="envoi()">Envoyer au parent</button>
+<p>{{monTexte}}</p>

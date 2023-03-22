@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+}
+
+.column {
+  border-left-color: black;
+  min-width: 50%;
+}

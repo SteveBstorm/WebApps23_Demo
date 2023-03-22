@@ -1,0 +1,4 @@
+<p>demoservice works!</p>
+<p>Statut de connexion : {{statut}}</p>
+<button (click)="login()" *ngIf="!statut">Connexion</button>
+<button (click)="logout()" *ngIf="statut">Déconnexion</button>

@@ -1,3 +1,5 @@
+import { DemoserviceComponent } from './demo/demoservice/demoservice.component';
+import { DemoinputComponent } from './demo/demoinput/demoinput.component';
 import { ProductResolver } from './services/product.resolver';
 import { TargetComponent } from './demo/demorouting/target/target.component';
 import { FourofourComponent } from './fourofour/fourofour.component';
@@ -12,7 +14,9 @@ const routes: Routes = [
   {path : 'home', component : HomeComponent},
   {path : 'demo', component : DemoComponent, children : [
     {path : 'demorouting', component : DemoroutingComponent},
-    {path : 'target/:id', resolve : {monArticle : ProductResolver} , component : TargetComponent}
+    {path : 'target/:id', resolve : {monArticle : ProductResolver} , component : TargetComponent},
+    {path : 'demoinput', component : DemoinputComponent},
+    {path : 'demoservice', component : DemoserviceComponent},
   ]},
   {path : '**', component : FourofourComponent},
 

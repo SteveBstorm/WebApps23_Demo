@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="column">
+    <h2>DemoInput</h2>
+    <ol>
+      <li *ngFor="let nom of monTableau">
+        <button (click)="transmet(nom)">{{nom}}</button>
+      </li>
+    </ol>
+    <p>Donnée qui vient de l'enfant : {{donneeRecueDeEnfant}}</p>
+  </div>
+  <div class="column">
+    <app-enfant
+      [valeur]="maValeur"
+      [truc]="42"
+      [nom]="selectedName"
+      (envoiEvent)="reception($event)"
+      (supprimerEvent)="supprimer($event)"
+      ></app-enfant>
+  </div>
+</div>
+

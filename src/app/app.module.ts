@@ -9,6 +9,10 @@ import { DemoComponent } from './demo/demo.component';
 import { DemoroutingComponent } from './demo/demorouting/demorouting.component';
 import { TargetComponent } from './demo/demorouting/target/target.component';
 import { FourofourComponent } from './fourofour/fourofour.component';
+import { DemoinputComponent } from './demo/demoinput/demoinput.component';
+import { EnfantComponent } from './demo/demoinput/enfant/enfant.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DemoserviceComponent } from './demo/demoservice/demoservice.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +22,16 @@ import { FourofourComponent } from './fourofour/fourofour.component';
     DemoComponent,
     DemoroutingComponent,
     TargetComponent,
-    FourofourComponent
+    FourofourComponent,
+    DemoinputComponent,
+    EnfantComponent,
+    DemoserviceComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
