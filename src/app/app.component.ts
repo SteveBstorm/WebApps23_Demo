@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FakeauthService } from './demo/demoservice/fakeauth.service';
 import { Link } from './nav/nav.component';
 
 @Component({
@@ -15,4 +16,11 @@ export class AppComponent {
     {label : "@Input()/@Output()", url : 'demo/demoinput'},
     {label : "Service", url : 'demo/demoservice'},
   ]
+
+  constructor(private _auth : FakeauthService){
+
+  }
+  ngOnInit() {
+
+  }
 }

@@ -1,7 +1,7 @@
 <!-- <a routerLink="home">Home</a> |
 <a routerLink="demo/demorouting">Démos routing</a> |
 <a routerLink="demo/demoinput">Démos input</a> | -->
-
+<p *ngIf="isConnected">Bonjour cher utilisateur connecté</p>
 <ol>
   <li *ngFor="let lien of listeLien">
     <a [routerLink]="lien.url">{{lien.label}}</a>

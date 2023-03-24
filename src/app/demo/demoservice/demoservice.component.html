@@ -2,3 +2,6 @@
 <p>Statut de connexion : {{statut}}</p>
 <button (click)="login()" *ngIf="!statut">Connexion</button>
 <button (click)="logout()" *ngIf="statut">Déconnexion</button>
+
+<p *ngIf="pokedex">toto : {{pokedex.count}}</p>
+<p>{{error}}</p>
